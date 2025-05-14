@@ -147,3 +147,14 @@ $(document).ready(function(){
 
 
  });
+
+function openModal(imageSrc) {
+  document.getElementById("modalImage").src = imageSrc;
+  document.getElementById("orderModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("orderModal").style.display = "none";
+}
+
+
