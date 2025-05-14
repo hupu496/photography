@@ -60,6 +60,25 @@
   font-weight: bold;
   cursor: pointer;
 }
+.form-control {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0 10px;
+  box-sizing: border-box;
+}
+
+.submit-btn {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #218838;
+}
 
 		</style>
 		<body>
@@ -167,72 +186,122 @@
 							</p>
 						</div>
 					</div>
-					<div class="gal">
+				<div class="gal">
   <div class="photo">
     <a href="img/p1.jpg"><img src="img/p1.jpg" alt=""></a>
-    <button class="order-btn" onclick="openModal('img/p1.jpg')">Order</button>
+    <div class="price-order-row">
+      <div class="price">₹499</div>
+      <button class="order-btn" onclick="openModal('img/p1.jpg', '₹499')">Order</button>
+    </div>
   </div>
   <div class="photo">
     <a href="img/p2.jpg"><img src="img/p2.jpg" alt=""></a>
-    <button class="order-btn" onclick="openModal('img/p2.jpg')">Order</button>
+    <div class="price-order-row">
+      <div class="price">₹599</div>
+      <button class="order-btn" onclick="openModal('img/p2.jpg', '₹599')">Order</button>
+    </div>
   </div>
   <div class="photo">
     <a href="img/p3.jpg"><img src="img/p3.jpg" alt=""></a>
-    <button class="order-btn" onclick="openModal('img/p3.jpg')">Order</button>
+    <div class="price-order-row">
+      <div class="price">₹399</div>
+      <button class="order-btn" onclick="openModal('img/p3.jpg', '₹399')">Order</button>
+    </div>
   </div>
   <div class="photo">
     <a href="img/p4.jpg"><img src="img/p4.jpg" alt=""></a>
-    <button class="order-btn" onclick="openModal('img/p4.jpg')">Order</button>
+    <div class="price-order-row">
+      <div class="price">₹349</div>
+      <button class="order-btn" onclick="openModal('img/p4.jpg', '₹349')">Order</button>
+    </div>
   </div>
   <div class="photo">
     <a href="img/p5.jpg"><img src="img/p5.jpg" alt=""></a>
-    <button class="order-btn" onclick="openModal('img/p5.jpg')">Order</button>
+    <div class="price-order-row">
+      <div class="price">₹699</div>
+      <button class="order-btn" onclick="openModal('img/p5.jpg', '₹699')">Order</button>
+    </div>
   </div>
   <div class="photo">
     <a href="img/p6.jpg"><img src="img/p6.jpg" alt=""></a>
-    <button class="order-btn" onclick="openModal('img/p6.jpg')">Order</button>
+    <div class="price-order-row">
+      <div class="price">₹799</div>
+      <button class="order-btn" onclick="openModal('img/p6.jpg', '₹799')">Order</button>
+    </div>
   </div>
   <div class="photo">
     <a href="img/p7.jpg"><img src="img/p7.jpg" alt=""></a>
-    <button class="order-btn" onclick="openModal('img/p7.jpg')">Order</button>
+    <div class="price-order-row">
+      <div class="price">₹449</div>
+      <button class="order-btn" onclick="openModal('img/p7.jpg', '₹449')">Order</button>
+    </div>
   </div>
   <div class="photo">
     <a href="img/p8.jpg"><img src="img/p8.jpg" alt=""></a>
-    <button class="order-btn" onclick="openModal('img/p8.jpg')">Order</button>
+    <div class="price-order-row">
+      <div class="price">₹549</div>
+      <button class="order-btn" onclick="openModal('img/p8.jpg', '₹549')">Order</button>
+    </div>
   </div>
   <div class="photo">
     <a href="img/p9.jpg"><img src="img/p9.jpg" alt=""></a>
-    <button class="order-btn" onclick="openModal('img/p9.jpg')">Order</button>
+    <div class="price-order-row">
+      <div class="price">₹389</div>
+      <button class="order-btn" onclick="openModal('img/p9.jpg', '₹389')">Order</button>
+    </div>
   </div>
   <div class="photo">
     <a href="img/p10.jpg"><img src="img/p10.jpg" alt=""></a>
-    <button class="order-btn" onclick="openModal('img/p10.jpg')">Order</button>
+    <div class="price-order-row">
+      <div class="price">₹299</div>
+      <button class="order-btn" onclick="openModal('img/p10.jpg', '₹299')">Order</button>
+    </div>
   </div>
   <div class="photo">
     <a href="img/p11.jpg"><img src="img/p11.jpg" alt=""></a>
-    <button class="order-btn" onclick="openModal('img/p11.jpg')">Order</button>
+    <div class="price-order-row">
+      <div class="price">₹629</div>
+      <button class="order-btn" onclick="openModal('img/p11.jpg', '₹629')">Order</button>
+    </div>
   </div>
   <div class="photo">
     <a href="img/p12.jpg"><img src="img/p12.jpg" alt=""></a>
-    <button class="order-btn" onclick="openModal('img/p12.jpg')">Order</button>
+    <div class="price-order-row">
+      <div class="price">₹359</div>
+      <button class="order-btn" onclick="openModal('img/p12.jpg', '₹359')">Order</button>
+    </div>
   </div>
   <div class="photo">
     <a href="img/p13.jpg"><img src="img/p13.jpg" alt=""></a>
-    <button class="order-btn" onclick="openModal('img/p13.jpg')">Order</button>
+    <div class="price-order-row">
+      <div class="price">₹799</div>
+      <button class="order-btn" onclick="openModal('img/p13.jpg', '₹799')">Order</button>
+    </div>
   </div>
   <div class="photo">
     <a href="img/p14.jpg"><img src="img/p14.jpg" alt=""></a>
-    <button class="order-btn" onclick="openModal('img/p14.jpg')">Order</button>
+    <div class="price-order-row">
+      <div class="price">₹459</div>
+      <button class="order-btn" onclick="openModal('img/p14.jpg', '₹459')">Order</button>
+    </div>
   </div>
   <div class="photo">
     <a href="img/p15.jpg"><img src="img/p15.jpg" alt=""></a>
-    <button class="order-btn" onclick="openModal('img/p15.jpg')">Order</button>
+    <div class="price-order-row">
+      <div class="price">₹589</div>
+      <button class="order-btn" onclick="openModal('img/p15.jpg', '₹589')">Order</button>
+    </div>
   </div>
   <div class="photo">
     <a href="img/p16.jpg"><img src="img/p16.jpg" alt=""></a>
-    <button class="order-btn" onclick="openModal('img/p16.jpg')">Order</button>
+    <div class="price-order-row">
+      <div class="price">₹379</div>
+      <button class="order-btn" onclick="openModal('img/p16.jpg', '₹379')">Order</button>
+    </div>
   </div>
 </div>
+
+
 
 				</div>
 			</section>
@@ -372,11 +441,28 @@
 <div id="orderModal" class="modal">
   <div class="modal-content">
     <span class="close" onclick="closeModal()">&times;</span>
-    <p>Order this item?</p>
-	 <input type="text" class="form-control">
-    <img id="modalImage" src="" alt="" style="max-width: 100px;">
+    <h3>Order This Item</h3>
+    
+    <form id="orderForm" onsubmit="submitOrder(event)">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" class="form-control" required><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" class="form-control" required><br>
+
+      <label for="mobile">Mobile Number:</label><br>
+      <input type="tel" id="mobile" class="form-control" required><br>
+	  <label for="mobile">Price:</label><br>
+      <input type="tel" id="modalPrice" class="form-control" required><br>
+
+      <label>Selected Item:</label><br>
+      <img id="modalImage" src="" alt="Selected Item" style="max-width: 100px; margin-bottom: 10px;"><br>
+
+      <button type="submit" class="submit-btn">Submit Order</button>
+    </form>
   </div>
 </div>
+
 			<!-- start footer Area -->		
 			<footer class="footer-area">
 				<div class="container">

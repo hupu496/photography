@@ -148,13 +148,32 @@ $(document).ready(function(){
 
  });
 
-function openModal(imageSrc) {
+
+function openModal(imageSrc, price) {
   document.getElementById("modalImage").src = imageSrc;
+  document.getElementById("modalPrice").textContent = price;
   document.getElementById("orderModal").style.display = "block";
 }
-
 function closeModal() {
   document.getElementById("orderModal").style.display = "none";
+  document.getElementById("orderForm").reset();
 }
+
+function submitOrder(event) {
+  event.preventDefault();
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const mobile = document.getElementById("mobile").value;
+   const price = document.getElementById("modalPrice").textContent;
+  const imageSrc = document.getElementById("modalImage").src;
+
+  // You can send this data to the server using fetch() or AJAX
+  console.log("Order Submitted:", { name, email, mobile, imageSrc });
+
+  alert("Order submitted successfully!");
+  closeModal();
+}
+
+
 
 
