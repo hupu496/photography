@@ -151,7 +151,7 @@ $(document).ready(function(){
 
 function openModal(imageSrc, price) {
   document.getElementById("modalImage").src = imageSrc;
-  document.getElementById("modalPrice").value = price;
+  document.getElementById("modalPrice").textContent = price;
   document.getElementById("orderModal").style.display = "block";
 }
 function closeModal() {
@@ -164,11 +164,11 @@ function submitOrder(event) {
   const name = document.getElementById("name").value;
   const email = document.getElementById("email").value;
   const mobile = document.getElementById("mobile").value;
-  const price = document.getElementById("modalPrice").value;
+   const price = document.getElementById("modalPrice").textContent;
   const imageSrc = document.getElementById("modalImage").src;
 
   // You can send this data to the server using fetch() or AJAX
-  console.log("Order Submitted:", { name, email, mobile, imageSrc, price });
+  console.log("Order Submitted:", { name, email, mobile, imageSrc });
 
   alert("Order submitted successfully!");
   closeModal();
