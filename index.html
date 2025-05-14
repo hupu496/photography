@@ -444,24 +444,36 @@
     <h3>Order This Item</h3>
     
     <form id="orderForm" onsubmit="submitOrder(event)">
-      <label for="name">Name:</label><br>
-      <input type="text" id="name" class="form-control" required><br>
+      <div style="display: flex; gap: 10px;">
+        <div style="flex: 1;">
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" class="form-control" required>
+        </div>
+        <div style="flex: 1;">
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" class="form-control" required>
+        </div>
+      </div><br>
 
-      <label for="email">Email:</label><br>
-      <input type="email" id="email" class="form-control" required><br>
-
-      <label for="mobile">Mobile Number:</label><br>
-      <input type="tel" id="mobile" class="form-control" required><br>
-	  <label for="mobile">Price:</label><br>
-      <input type="tel" id="modalPrice" class="form-control" required><br>
+      <div style="display: flex; gap: 10px;">
+        <div style="flex: 1;">
+          <label for="mobile">Mobile Number:</label><br>
+          <input type="tel" id="mobile" class="form-control" required>
+        </div>
+        <div style="flex: 1;">
+          <label for="modalPrice">Price:</label><br>
+          <input type="text" id="modalPrice" class="form-control" readonly>
+        </div>
+      </div><br>
 
       <label>Selected Item:</label><br>
       <img id="modalImage" src="" alt="Selected Item" style="max-width: 100px; margin-bottom: 10px;"><br>
 
-      <button type="submit" class="submit-btn">Submit Order</button>
+      <button type="submit" class="submit-btn" style="padding: 10px 20px; background: #28a745; color: white; border: none; border-radius: 5px;">Submit Order</button>
     </form>
   </div>
 </div>
+
 
 			<!-- start footer Area -->		
 			<footer class="footer-area">
